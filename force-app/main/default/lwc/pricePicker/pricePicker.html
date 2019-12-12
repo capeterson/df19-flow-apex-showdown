@@ -1,0 +1,29 @@
+<template>
+        <fieldset class="slds-form-element">
+            <legend class="slds-form-element__legend slds-form-element__label">{label}</legend>
+            <div class="slds-form-element__control">
+                <template for:each={records} for:item="record">
+                    <div key={record.Id} class="slds-visual-picker slds-visual-picker_medium">
+                        <input type="radio" id={record.Id} value={record.Id} name="options"
+                            onclick={handleOptionSelected} />
+                        <label for={record.Id}>
+                            <span class="slds-visual-picker__figure slds-visual-picker__text slds-align_absolute-center">
+                                <span>
+                                    <span class="slds-text-heading_large">${record.Price__c}</span>
+                                    <span class="slds-text-title">Quantity: {record.Quantity__c}</span>
+                                </span>
+                            </span>
+                            <span class="slds-visual-picker__body">
+                                    <span class="slds-text-heading_small">{record.Name}</span>
+                            </span>
+                            <span class="slds-icon_container slds-visual-picker__text-check">
+                                <svg class="slds-icon slds-icon-text-check slds-icon_x-small" aria-hidden="true">
+                                    <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#check"></use>
+                                </svg>
+                            </span>
+                        </label>
+                    </div>
+                </template>
+            </div>
+        </fieldset>
+    </template>

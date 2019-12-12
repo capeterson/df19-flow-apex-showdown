@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="orderPicker">
+    <apiVersion>47.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Tim Order Picker</masterLabel>
+ 
+    <targets>
+        <target>lightning__FlowScreen</target>
+    </targets>
+
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="label" type="String" label="Label" />
+            <property name="records" type="@salesforce/schema/Simple_Sales_Order__c[]" label="Orders" />
+            <property name="value" type="String" role="outputOnly" label="Value" />
+        </targetConfig>
+    </targetConfigs>
+
+</LightningComponentBundle>

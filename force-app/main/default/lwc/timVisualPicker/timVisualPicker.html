@@ -1,0 +1,114 @@
+<template>
+    <fieldset class="slds-form-element">
+        <div class="slds-form-element__control">
+            <div class="slds-form-element__row">
+                <div class="slds-visual-picker slds-visual-picker_medium">
+                    <input type="checkbox" id="bathing-icon" value={bathingUrl} name="options"
+                        onclick={handleOptionSelected} />
+                    <label for="bathing-icon">
+                        <span class="slds-visual-picker__figure slds-visual-picker__text slds-align_absolute-center">
+                            <img src={bathingUrl} />
+                        </span>
+                        <span class="slds-visual-picker__body">
+                            <span class="slds-text-heading_small">Bathing!</span>
+                        </span>
+                        <span class="slds-icon_container slds-visual-picker__text-check">
+                            <svg class="slds-icon slds-icon-text-check slds-icon_x-small" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#check"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="slds-visual-picker slds-visual-picker_medium">
+                    <input type="checkbox" id="indoor-icon" value={indoorUrl} name="options"
+                        onclick={handleOptionSelected} />
+                    <label for="indoor-icon">
+                        <span class="slds-visual-picker__figure slds-visual-picker__text slds-align_absolute-center">
+                            <img src={indoorUrl} />
+                        </span>
+                        <span class="slds-visual-picker__body">
+                            <span class="slds-text-heading_small">Indoors Mobility</span>
+                        </span>
+                        <span class="slds-icon_container slds-visual-picker__text-check">
+                            <svg class="slds-icon slds-icon-text-check slds-icon_x-small" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#check"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="slds-visual-picker slds-visual-picker_medium">
+                    <input type="checkbox" id="outdoor-icon" value={outdoorUrl} name="options"
+                        onclick={handleOptionSelected} />
+                    <label for="outdoor-icon">
+                        <span class="slds-visual-picker__figure slds-visual-picker__text slds-align_absolute-center">
+                            <img src={outdoorUrl} />
+                        </span>
+                        <span class="slds-visual-picker__body">
+                            <span class="slds-text-heading_small">Outdoors Mobility</span>
+                        </span>
+                        <span class="slds-icon_container slds-visual-picker__text-check">
+                            <svg class="slds-icon slds-icon-text-check slds-icon_x-small" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#check"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <br />
+            <div class="slds-form-element__row">
+                <div class="slds-visual-picker slds-visual-picker_medium">
+                    <input type="checkbox" id="transferring-icon" value={transferringUrl} name="options"
+                        onclick={handleOptionSelected} />
+                    <label for="transferring-icon">
+                        <span class="slds-visual-picker__figure slds-visual-picker__text slds-align_absolute-center">
+                            <img src={transferringUrl} />
+                        </span>
+                        <span class="slds-visual-picker__body">
+                            <span class="slds-text-heading_small">Transferring</span>
+                        </span>
+                        <span class="slds-icon_container slds-visual-picker__text-check">
+                            <svg class="slds-icon slds-icon-text-check slds-icon_x-small" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#check"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="slds-visual-picker slds-visual-picker_medium">
+                    <input type="checkbox" id="eating-icon" value={eatingUrl} name="options"
+                        onclick={handleOptionSelected} />
+                    <label for="eating-icon">
+                        <span class="slds-visual-picker__figure slds-visual-picker__text slds-align_absolute-center">
+                            <img src={eatingUrl} />
+                        </span>
+                        <span class="slds-visual-picker__body">
+                            <span class="slds-text-heading_small">Eating</span>
+                        </span>
+                        <span class="slds-icon_container slds-visual-picker__text-check">
+                            <svg class="slds-icon slds-icon-text-check slds-icon_x-small" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#check"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+                <div class="slds-visual-picker slds-visual-picker_medium">
+                    <input type="checkbox" id="dressing-icon" value={dressingUrl} name="options"
+                        onclick={handleOptionSelected} />
+                    <label for="dressing-icon">
+                        <span class="slds-visual-picker__figure slds-visual-picker__text slds-align_absolute-center">
+                            <img src={dressingUrl} />
+                        </span>
+                        <span class="slds-visual-picker__body">
+                            <span class="slds-text-heading_small">Dressing</span>
+                        </span>
+                        <span class="slds-icon_container slds-visual-picker__text-check">
+                            <svg class="slds-icon slds-icon-text-check slds-icon_x-small" aria-hidden="true">
+                                <use xlink:href="/_slds/icons/utility-sprite/svg/symbols.svg#check"></use>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </fieldset>
+</template>

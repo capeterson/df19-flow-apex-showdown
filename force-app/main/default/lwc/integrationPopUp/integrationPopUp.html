@@ -1,0 +1,8 @@
+<template>
+    <lightning-button onclick={doIntegration} label="Do Integration"></lightning-button>
+    <div>{messageFromPage}</div>
+    <div>
+        <iframe src={navigateTo} name="integrationFrame" onload={frameLoaded} width="350" height="500"
+            style="border:1px solid red"></iframe>
+    </div>
+</template>
