@@ -1,6 +1,6 @@
 Simple_customer__c newCustomer = new Simple_Customer__c();
 newCustomer.name = 'Lauren Boyle';
-newCustomer.Stripe_Account_ID__c = 'acct_1FpON0GWAEwDeUrd';
+newCustomer.Stripe_Account_ID__c = '<USE_YOUR_OWN_ACCOUNT>';
 
 insert newCustomer;
 
