@@ -9,7 +9,7 @@ https://speakerdeck.com/ca_peterson/df19-flow-and-apex-showdown
 Required Manual Step
 ====================
 
-Setup a devhub org and login to the devhub via SFDX CLI and set its alias as tdxdevhub like so
+Setup a devhub org and login to the devhub via SFDX CLI and set its alias as tdxdemohub like so
 
 ```sfdx force:auth:web:login -d -a tdxdemohub```
 
